@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "CodeBuild started"
+
+  build:
+    commands:
+      - echo "Preparing files for deployment"
+
+  post_build:
+    commands:
+      - echo "Build completed"
+
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
+
